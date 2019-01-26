@@ -9,13 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7769541383116090089}
-  - component: {fileID: 127166534152967243}
   - component: {fileID: 4226902477299321726}
   - component: {fileID: 1093898135730322977}
   - component: {fileID: 8439091636695842651}
-  - component: {fileID: 678629262106961590}
+  - component: {fileID: 6547959162850038369}
   - component: {fileID: 7630493697693432982}
-  - component: {fileID: 8647079500781133650}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -37,24 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &127166534152967243
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8353369691985224178}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 0.2
-  m_Radius: 0.1
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &4226902477299321726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -144,10 +124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  targetPosition: {x: 0, y: 0, z: 0}
   speed: 10
   nextWaypointDistance: 0.2
---- !u!114 &678629262106961590
+--- !u!114 &6547959162850038369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,19 +135,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8353369691985224178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb6a34d769a1e4ac7b0b30e433aa443c, type: 3}
+  m_Script: {fileID: 11500000, guid: a537d958aa5bb4f35b0d7b40d72278f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  smoothType: 0
-  subdivisions: 2
-  iterations: 2
-  strength: 0.5
-  uniformLength: 1
-  maxSegmentLength: 2
-  bezierTangentLength: 0.4
-  offset: 0.2
-  factor: 0.1
+  penalty: 1000
+  randomStep: 10
 --- !u!114 &7630493697693432982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,16 +156,3 @@ MonoBehaviour:
   version: 1
   unwrap: 1
   splitAtEveryPortal: 0
---- !u!65 &8647079500781133650
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8353369691985224178}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.2, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
