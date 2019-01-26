@@ -20,6 +20,9 @@ public class twitchChat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        username = dataSaver.Instance.username;
+        channelName = dataSaver.Instance.channelName;
+        password = dataSaver.Instance.password;
         Connect();
         inGamePlayers = new ArrayList();
     }

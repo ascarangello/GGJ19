@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class mainMenuButtons : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class mainMenuButtons : MonoBehaviour
     //should move to twitch info screen
     void startGame()
     {
-        
+        SceneManager.LoadScene("twitchInfoScreen");
     }
     //simply quits game
     void quitGame()
