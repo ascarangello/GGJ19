@@ -13,10 +13,12 @@ public class twitchChat : MonoBehaviour
 
     public string username, password, channelName;
     public Text chatBox;
+    public static ArrayList inGamePlayers;
     // Start is called before the first frame update
     void Start()
     {
         Connect();
+        inGamePlayers = new ArrayList();
     }
 
     // Update is called once per frame
@@ -58,7 +60,12 @@ public class twitchChat : MonoBehaviour
                 //get message
                 splitPoint = message.IndexOf(":", 1);
                 message = message.Substring(splitPoint + 1);
-                chatBox.text = chatBox.text + "\n" + string.Format("{0}: {1}", chatName, message);
+                //parse for !join
+                if (message.ToLower() == "!join" && !inGamePlayers.Contains(chatName))
+                {
+                    inGamePlayers.Add(chatName);
+                    chatBox.text = chatBox.text + "\n" + string.Format("{0}", chatName);
+                }
             }
         }
     }
