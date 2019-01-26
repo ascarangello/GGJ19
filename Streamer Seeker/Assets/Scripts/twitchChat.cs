@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Net.Sockets;
@@ -14,6 +15,8 @@ public class twitchChat : MonoBehaviour
     public string username, password, channelName;
     public Text chatBox;
     public static ArrayList inGamePlayers;
+    public GameObject viewerParent;
+    public GameObject viewerPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,7 +67,25 @@ public class twitchChat : MonoBehaviour
                 if (message.ToLower() == "!join" && !inGamePlayers.Contains(chatName))
                 {
                     inGamePlayers.Add(chatName);
+                    GameObject newViewer = Instantiate(viewerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+                    newViewer.name = chatName;
+                    newViewer.transform.parent = viewerParent.transform; 
                     chatBox.text = chatBox.text + "\n" + string.Format("{0}", chatName);
+                }
+                //parse for choosing door/window if player is already in
+                Match matchWindow = Regex.Match(message, "^!w[1-7]$");
+                Match matchDoor = Regex.Match(message, "^!d[1-2]$");
+                if (matchWindow.Success || matchDoor.Success) 
+                {
+                    if(inGamePlayers.Contains(chatName))
+                    {
+                       GameObject thisViewer = GameObject.Find(chatName);
+                        viewerInfo info = thisViewer.GetComponent<viewerInfo>();
+                       if(info.chosenWindow == "NA")
+                        {
+                            info.chosenWindow = message.Substring(1);
+                        }
+                    }
                 }
             }
         }
