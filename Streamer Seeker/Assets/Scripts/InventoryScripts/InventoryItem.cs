@@ -9,7 +9,7 @@ public class InventoryItem : ScriptableObject
     public int numLeft;
     public GameObject player;
 
-    public void PlaceItem()
+    public virtual void PlaceItem()
     {
         // Does nothing because this method needs to be overridden by child classes
     }

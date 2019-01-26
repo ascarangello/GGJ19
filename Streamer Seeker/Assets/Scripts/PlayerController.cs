@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public Transform spawnOffset;
     private float shootCooldown = 1;
     private bool canShoot;
+    private bool inDoorWindow = false;
+    private bool onTrap = false;
 
     void Start()
     {
@@ -78,5 +80,39 @@ public class PlayerController : MonoBehaviour
             canShoot = false;
 
         }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("door") || collision.CompareTag("window"))
+        {
+            this.inDoorWindow = true;
+        }
+        if (collision.CompareTag("trap"))
+        {
+            this.onTrap = true;
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("door") || collision.CompareTag("window"))
+        {
+            this.inDoorWindow = false;
+        }
+        if (collision.CompareTag("trap"))
+        {
+            this.onTrap = true;
+        }
+    }
+
+    public bool OnDoorWindow()
+    {
+        return this.inDoorWindow;
+    }
+
+    public bool IsOnTrap()
+    {
+        return this.onTrap;
     }
 }
