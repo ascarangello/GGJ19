@@ -5,8 +5,9 @@ using Pathfinding;
 public class AI_FIndingPath : MonoBehaviour
 {
 
+   
+    private Vector3 targetPosition;
     public Transform target;
-    public Vector3 targetPosition;
 
     private Seeker seeker;
     private CharacterController controller;
@@ -31,9 +32,16 @@ public class AI_FIndingPath : MonoBehaviour
         seeker = GetComponent<Seeker>();
         controller = GetComponent<CharacterController>();
 
+        var bounds = GetComponent<Collider2D>().bounds;
+        // Expand the bounds along the Z axis
+        bounds.Expand(Vector3.forward * 1000);
+        var guo = new GraphUpdateObject(bounds);
+        // change some settings on the object
+        AstarPath.active.UpdateGraphs(guo);
 
         //Start a new path to the targetPosition, return the result to the OnPathComplete function
         seeker.StartPath(transform.position, targetPosition, OnPathComplete);
+        
     }
 
     public void OnPathComplete(Path p)
@@ -68,7 +76,10 @@ public class AI_FIndingPath : MonoBehaviour
         //Direction to the next waypoint
         Vector3 dir = (path.vectorPath[currentWaypoint] - transform.position).normalized;
         dir *= speed * Time.fixedDeltaTime;
-        controller.Move(dir);
+        //controller.Move(dir);
+
+
+        
 
         //Check if we are close enough to the next waypoint
         //If we are, proceed to follow the next waypoint
