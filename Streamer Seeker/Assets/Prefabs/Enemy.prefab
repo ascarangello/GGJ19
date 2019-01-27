@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 3
-  timer: {fileID: 0}
+  timer: {fileID: 363321332445705580, guid: 5c9b47ea2ee18cc4da30adca17f41cd0, type: 3}
   timerInfo: {fileID: 0}
   nameText: {fileID: 1463493446}
   inside: 0
