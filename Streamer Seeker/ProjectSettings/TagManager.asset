@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Projectile
   - Viewer
+  - window
+  - door
+  - trap
+  - Streamer
   layers:
   - Default
   - TransparentFX
