@@ -19,6 +19,6 @@ public class infoScreenButtons : MonoBehaviour
         dataSaver.Instance.username = usernameF.text;
         dataSaver.Instance.channelName = channelNameF.text;
         dataSaver.Instance.password = passwordF.text;
-        SceneManager.LoadScene("ChatTest");
+        SceneManager.LoadScene("JamieIsFuckingAround");
     }
 }
