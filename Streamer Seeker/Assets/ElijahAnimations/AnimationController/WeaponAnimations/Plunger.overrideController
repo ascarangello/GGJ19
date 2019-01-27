@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Plunger
+  m_Controller: {fileID: 9100000, guid: 379a7079c6ebd4e7d87ccddc7505eed0, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: bb84af9406701490c956a76f5310aaee, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d77666e929e7540e1bcd328deccce1bd, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a22757a2e93f14c0aa0d8a3d36c69554, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 96edb85786f01499593a03a77f1ac85d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3320d148fbba64dfcaec24bdee6f7112, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 169e25d2bf15c48ceafde2aa07d9ffa3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d8b486c273a7b49f09a35fa8d5f47a63, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 858315a740e454ffcba3c10c34e68690, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 916c3f827542a422187d0b6bcaae0c88, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6d9e996726dbe435c8d8ee2a03a3c83e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e1e9ba7645bcd4759a5dba5c1d55b3d4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4ba961cc1646f40c78e73abbfaa9493c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 99214de07a07a443a931191d96059ee2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: caa10548279c740aea14d3e5f55d1aeb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c1584b1be89b54ca09a8adcfc8c86fc1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8989359c24bbf49f48913b2bde47401e, type: 2}

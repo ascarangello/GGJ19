@@ -6,9 +6,11 @@ public class WaterBucketController : MonoBehaviour
 {
     private List<GameObject> targets;
     private int delay;
+    private Animator anim;
 
     public void Start()
     {
+        anim = GetComponent<Animator>();
         this.targets = new List<GameObject>();
         this.delay = 0;
     }
@@ -46,6 +48,7 @@ public class WaterBucketController : MonoBehaviour
 
     public void Pour()
     {
+        anim.SetTrigger("Bucket");
         Debug.Log("Pouring");
         foreach (GameObject go in this.targets)
         {

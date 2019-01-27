@@ -6,17 +6,17 @@ public class CokeMentosController : MonoBehaviour
 {
     private List<GameObject> targets;
 
+    private Animator anim;
+
     public void Start()
     {
         this.targets = new List<GameObject>();
+        anim = GetComponent<Animator>();
         Physics.queriesHitTriggers = true;
     }
 
     public void OnMouseDown()
     {
-        BoxCollider2D bc = this.gameObject.GetComponent<BoxCollider2D>();
-        bc.offset = new Vector2(10, bc.offset.y);
-        bc.size = new Vector2(22, bc.size.y);
         Blast();
     }
 
@@ -38,6 +38,8 @@ public class CokeMentosController : MonoBehaviour
 
     public void Blast()
     {
+        print("Test");
+        anim.SetTrigger("Coke");
         foreach (GameObject go in this.targets)
         {
             go.GetComponent<viewerInfo>().dealDamage(10);

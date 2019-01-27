@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float bulletSpeed = 20;
     public GameObject bulletPrefab;
     public Transform spawnOffset;
+    public string itemName = "NA";
 
     private float shootCooldown = 1;
     private bool canShoot;
@@ -40,9 +41,14 @@ public class PlayerController : MonoBehaviour
         }
         if(shootCooldown <= 0)
         {
-            canShoot = false;
+            canShoot = true;
             shootCooldown = 1;
         }
+        if(itemName == "Plunger")
+        {
+
+        }
+
     }
 
     void FixedUpdate()
@@ -92,6 +98,15 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("trap"))
         {
             this.onTrap = true;
+        }
+    }
+
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        if(Input.GetKeyDown(KeyCode.E) && collision.gameObject.CompareTag("Item"))
+        {
+            itemName = collision.gameObject.name;
+            collision.gameObject.SetActive(false);
         }
     }
 

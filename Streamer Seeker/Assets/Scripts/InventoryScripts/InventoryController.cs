@@ -36,7 +36,7 @@ public class InventoryController : MonoBehaviour
             Debug.Log("Pressed 1");
             if (this.items[0].numLeft == 0)
             {
-                Debug.Log("Should not be here");
+                return;
             }
             else
             {
@@ -56,7 +56,7 @@ public class InventoryController : MonoBehaviour
         {
             if (this.items[1].numLeft == 0)
             {
-
+                return;
             }
             else
             {
@@ -75,7 +75,7 @@ public class InventoryController : MonoBehaviour
         {
             if (this.items[2].numLeft == 0)
             {
-
+                return;
             }
             else
             {
@@ -95,7 +95,7 @@ public class InventoryController : MonoBehaviour
         {
             if (this.items[2].numLeft == 0)
             {
-
+                return;
             }
             else
             {

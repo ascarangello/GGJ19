@@ -10,6 +10,8 @@ TagManager:
   - door
   - trap
   - Streamer
+  - Entrances
+  - Ro
   layers:
   - Default
   - TransparentFX

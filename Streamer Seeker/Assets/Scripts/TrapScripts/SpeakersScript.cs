@@ -14,9 +14,6 @@ public class SpeakersScript : MonoBehaviour
 
     public void OnMouseDown()
     {
-        BoxCollider2D bc = this.gameObject.GetComponent<BoxCollider2D>();
-        bc.offset = new Vector2(0, -6);
-        bc.size = new Vector2(18, 19);
         Blast();
     }
 

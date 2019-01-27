@@ -7,11 +7,13 @@ public class AxeController : MonoBehaviour
     private List<GameObject> targets;
     private float sprayTime = 1;
     private bool spraying = false;
+    private Animator anim;
 
     public void Start()
     {
         this.targets = new List<GameObject>();
         Physics.queriesHitTriggers = true;
+        anim = GetComponent<Animator>();
     }
 
     public void Update()
@@ -28,15 +30,14 @@ public class AxeController : MonoBehaviour
         {
             spraying = false;
             sprayTime = 1;
+            anim.SetTrigger("NoAxe");
         }
     }
 
     public void OnMouseDown()
     {
-        CircleCollider2D cc = this.gameObject.AddComponent<CircleCollider2D>();
-        cc.offset = new Vector2(0, 0);
-        cc.radius = 10;
         this.spraying = true;
+        anim.SetTrigger("Axe");
     }
 
     public void OnTriggerStay2D(Collider2D collision)
