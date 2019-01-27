@@ -10,7 +10,8 @@ public class InventoryCokeMentos : InventoryItem
 
     public override void PlaceItem()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Streamer");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        //GameObject playerRo = GameObject.FindGameObjectWithTag("Ro");
         if (this.numLeft > 0 && !player.GetComponent<PlayerController>().OnDoorWindow()
             && !player.GetComponent<PlayerController>().IsOnTrap())
         {

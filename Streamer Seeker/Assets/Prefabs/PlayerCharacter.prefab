@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 721515223}
   m_Layer: 0
   m_Name: Roat
-  m_TagString: Untagged
+  m_TagString: Ro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,7 +214,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6845565049385283934, guid: b15293e694a5fe649892648176365ef0,
     type: 3}
   spawnOffset: {fileID: 822811869}
-  camera: {fileID: 3219566334570835090, guid: 114993569cf2b432994049c7e65abbbe, type: 3}
 --- !u!95 &1046706593
 Animator:
   serializedVersion: 3

@@ -103,10 +103,10 @@ TextureImporter:
       name: Host_Attack_Plunger_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 104
-        width: 13
-        height: 16
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,7 +114,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3013564e7a7a4ec8a867666f44e2117
+      spriteID: aac11c8c0f7e3444caa5e7c9cf468a9a
       vertices: []
       indices: 
       edges: []
@@ -123,10 +123,10 @@ TextureImporter:
       name: Host_Attack_Plunger_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 104
-        width: 13
-        height: 17
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,7 +134,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33c5dc79ea1564f7e955692f6615c56a
+      spriteID: dd44bf1b2e637422dadfd25d0303bc16
       vertices: []
       indices: 
       edges: []
@@ -143,10 +143,10 @@ TextureImporter:
       name: Host_Attack_Plunger_2
       rect:
         serializedVersion: 2
-        x: 74
-        y: 104
-        width: 12
-        height: 16
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 146c3fa84422d4ec3a45ea6180d7e0c3
+      spriteID: 03cd39890335b4b7697c0c78c5e6bd53
       vertices: []
       indices: 
       edges: []
@@ -163,10 +163,10 @@ TextureImporter:
       name: Host_Attack_Plunger_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 104
-        width: 13
-        height: 17
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea632d7fd6513439987ae3e002c7aa60
+      spriteID: 9ef2caff70bf542bfa6b30d02dce1e50
       vertices: []
       indices: 
       edges: []
@@ -183,10 +183,10 @@ TextureImporter:
       name: Host_Attack_Plunger_4
       rect:
         serializedVersion: 2
-        x: 13
-        y: 72
-        width: 13
-        height: 16
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d0334bd4ceee4cc09dd8c0d7292114f
+      spriteID: bfa2ca84e816642fc83d3079356dc015
       vertices: []
       indices: 
       edges: []
@@ -203,10 +203,10 @@ TextureImporter:
       name: Host_Attack_Plunger_5
       rect:
         serializedVersion: 2
-        x: 44
-        y: 72
-        width: 13
-        height: 16
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,7 +214,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71578d408642a4e7788f4cb4fda532a5
+      spriteID: 11124893a20f049fc87ca414d6d73953
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
       name: Host_Attack_Plunger_6
       rect:
         serializedVersion: 2
-        x: 74
-        y: 72
-        width: 11
-        height: 16
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,7 +234,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55506389298584da7b5e5aa08b00a3f4
+      spriteID: 0f7756a853f1d4e40af9e464344005f8
       vertices: []
       indices: 
       edges: []
@@ -243,10 +243,10 @@ TextureImporter:
       name: Host_Attack_Plunger_7
       rect:
         serializedVersion: 2
-        x: 103
-        y: 72
-        width: 13
-        height: 16
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,7 +254,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3cdf9b04dad54077b42cfd3be7923c3
+      spriteID: 9afab7f74156b46f0b5d986ee19da0ef
       vertices: []
       indices: 
       edges: []
@@ -263,10 +263,10 @@ TextureImporter:
       name: Host_Attack_Plunger_8
       rect:
         serializedVersion: 2
-        x: 10
-        y: 40
-        width: 12
-        height: 16
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,7 +274,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 070f410ecb85c40e487eb4cca221b8fb
+      spriteID: 2660230b654ce47bda5acf0a539781bc
       vertices: []
       indices: 
       edges: []
@@ -283,10 +283,10 @@ TextureImporter:
       name: Host_Attack_Plunger_9
       rect:
         serializedVersion: 2
-        x: 44
-        y: 40
-        width: 10
-        height: 16
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,7 +294,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59ce45ec4c8dd4867bfdc03cde144530
+      spriteID: c5125ae9d679a4ff2a31e6dfc48ce0fc
       vertices: []
       indices: 
       edges: []
@@ -303,10 +303,10 @@ TextureImporter:
       name: Host_Attack_Plunger_10
       rect:
         serializedVersion: 2
-        x: 76
-        y: 40
-        width: 12
-        height: 17
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,7 +314,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2304edc254594d3e91dd0f050149226
+      spriteID: 19a7657e5a178439dae2290837749833
       vertices: []
       indices: 
       edges: []
@@ -323,10 +323,10 @@ TextureImporter:
       name: Host_Attack_Plunger_11
       rect:
         serializedVersion: 2
-        x: 103
-        y: 40
-        width: 10
-        height: 16
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,7 +334,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e0ed93ed93be4c6298e14e18726ba29
+      spriteID: 2f38b73c8d2d94eee800ec501fb2faf4
       vertices: []
       indices: 
       edges: []
@@ -343,10 +343,10 @@ TextureImporter:
       name: Host_Attack_Plunger_12
       rect:
         serializedVersion: 2
-        x: 14
-        y: 8
-        width: 13
-        height: 16
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,7 +354,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d97844f35afa2475e8fc59a288b6f5c9
+      spriteID: 103c8ef5229064b2e8f0d593c8b457b3
       vertices: []
       indices: 
       edges: []
@@ -363,10 +363,10 @@ TextureImporter:
       name: Host_Attack_Plunger_13
       rect:
         serializedVersion: 2
-        x: 46
-        y: 8
-        width: 12
-        height: 16
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,7 +374,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7c7435860ae947eeb7945bd560fcee3
+      spriteID: f51dbb1e638ab426fb411fdfe3487714
       vertices: []
       indices: 
       edges: []
@@ -383,10 +383,10 @@ TextureImporter:
       name: Host_Attack_Plunger_14
       rect:
         serializedVersion: 2
-        x: 74
-        y: 8
-        width: 12
-        height: 20
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,7 +394,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5652595994a05478f82d6655f0afe6d8
+      spriteID: cca1227e2ee7740bdb729bbe3e412b2e
       vertices: []
       indices: 
       edges: []
@@ -403,10 +403,10 @@ TextureImporter:
       name: Host_Attack_Plunger_15
       rect:
         serializedVersion: 2
-        x: 103
-        y: 8
-        width: 16
-        height: 16
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,7 +414,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7040407116a2c470ea49dd7e9a6cfc31
+      spriteID: 52d83f8887c744c5f85bcb0bbd9edf05
       vertices: []
       indices: 
       edges: []
