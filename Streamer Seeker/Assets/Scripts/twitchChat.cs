@@ -13,7 +13,7 @@ public class twitchChat : MonoBehaviour
     private StreamWriter writer;
 
     public string username, password, channelName;
-    public Text chatBox;
+    //public Text chatBox;
     public static ArrayList inGamePlayers;
     public GameObject viewerParent;
     public GameObject viewerPrefab;
@@ -70,10 +70,20 @@ public class twitchChat : MonoBehaviour
                 if (message.ToLower() == "!join" && !inGamePlayers.Contains(chatName))
                 {
                     inGamePlayers.Add(chatName);
-                    GameObject newViewer = Instantiate(viewerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-                    newViewer.name = chatName;
-                    newViewer.transform.parent = viewerParent.transform; 
-                    chatBox.text = chatBox.text + "\n" + string.Format("{0}", chatName);
+                    bool foundMatch = false;
+                    foreach(GameObject created in GameObject.FindGameObjectsWithTag("Viewer"))
+                    {
+                        if(!foundMatch)
+                        {
+                            if (created.name.Contains(" "))
+                            {
+                                created.name = chatName;
+                                created.GetComponent<viewerInfo>().viewerName = chatName;
+                                foundMatch = true;
+                            }
+                        }
+                    }
+                   // chatBox.text = chatBox.text + "\n" + string.Format("{0}", chatName);
                 }
                 //parse for choosing door/window if player is already in
                 Match matchWindow = Regex.Match(message, "^!w[1-7]$");
