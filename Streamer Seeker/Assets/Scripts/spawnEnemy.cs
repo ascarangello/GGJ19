@@ -47,7 +47,13 @@ public class spawnEnemy : MonoBehaviour
         anmiCont.SetInteger("RandomAnimation", charRand);
         this.transform.position = new Vector3(-0.8f, -15.93f, -.031f);
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Projectile")
+        {
+            Destroy(gameObject);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -81,6 +87,7 @@ public class spawnEnemy : MonoBehaviour
             
             setPaths = true;
         }
+
         if(timerInfo.roundStarted && setPaths && !this.GetComponent<AI_FIndingPath>().enabled && !inside)
         {
             string entrancePath = this.GetComponent<viewerInfo>().chosenWindow + " entrance";
@@ -95,9 +102,5 @@ public class spawnEnemy : MonoBehaviour
             this.GetComponent<AI_FIndingPath>().seeker.StartPath(this.transform.position, destinationTransform.position, this.GetComponent<AI_FIndingPath>().OnPathComplete);
             inside = true;
         }
-
-
-
-
     }
 }

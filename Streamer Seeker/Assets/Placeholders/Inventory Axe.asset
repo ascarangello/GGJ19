@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 082baf000bbf3a24eba6a7ff20181d36, type: 3}
   numLeftDefault: 1
-  numLeft: 10
+  numLeft: 1
   axe: {fileID: 1592889542369680056, guid: b45026b9d9061db418280ff2a948ad19, type: 3}

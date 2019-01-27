@@ -27,7 +27,6 @@ public class roundTimer : MonoBehaviour
         else if (roundPrep <= 0 && !roundStarted)
         {
             roundStarted = true;
-            Debug.Log("did it");
             timerUI.text = "Incoming!";
         }
 
