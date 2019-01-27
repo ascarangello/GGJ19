@@ -23,6 +23,34 @@ TextureImporter:
     21300036: BottomLeftNub
     21300038: Casing_11
     21300040: BottomRightNub
+    21300042: Casing_0
+    21300044: Casing_1
+    21300046: Casing_2
+    21300048: Casing_3
+    21300050: Casing_4
+    21300052: Casing_6
+    21300054: Casing_7
+    21300056: Casing_8
+    21300058: Casing_9
+    21300060: Casing_10
+    21300062: Casing_12
+    21300064: Casing_13
+    21300066: Casing_14
+    21300068: Casing_15
+    21300070: Casing_16
+    21300072: Casing_17
+    21300074: Casing_18
+    21300076: Casing_19
+    21300078: Casing_20
+    21300080: Casing_21
+    21300082: Casing_22
+    21300084: Casing_23
+    21300086: Casing_24
+    21300088: Casing_25
+    21300090: Casing_26
+    21300092: Casing_27
+    21300094: Casing_28
+    21300096: Casing_29
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -105,7 +133,287 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TopLeft
+      name: Casing_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c38b4b527aac4053a2dcf9c15e855bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4585361c8e745f79b82eefd4827792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81248ce8080ae4c1bbf1094223aa3fa9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad51335f119b4a8e884f17c0ea2eebf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0701313e3dd4e29a14837ac38adcf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfff32d0af974e738ba992e13e1d17c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3236fc8cb41ee47ce997e03d28010622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28703d685e21f4385a12256a89b39a91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6468adf2b8f4831aec7f1c41a8534c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e1cbf5c27c746969fa4aa0f11e6b49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7518713a79146d38cdd95897059481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ecf0f2dfbd547e68f0bdd3b0c31b7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5556ce11763445da6bc76ea616b8a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53670b63c42bd409dbcb508e203094f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_14
       rect:
         serializedVersion: 2
         x: 0
@@ -113,19 +421,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe75a8a0c445f438d98d3d69c7034217
+      spriteID: be0867c1029f149beb5fbe04f10b28f5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Top
+      name: Casing_15
       rect:
         serializedVersion: 2
         x: 32
@@ -133,19 +441,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a38df03c2ba4545ca997664efc802e91
+      spriteID: bbb1279d328a0494c9ad97cd4d581889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TopRight
+      name: Casing_16
       rect:
         serializedVersion: 2
         x: 64
@@ -153,19 +461,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c13c24cf7f8f4b66b7505a58db972e0
+      spriteID: 074322b4a403d401ba0157a765da6d02
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TopLeftNub
+      name: Casing_17
       rect:
         serializedVersion: 2
         x: 96
@@ -173,39 +481,39 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0959154e1e95492d9513002bb144ce2
+      spriteID: b47050c97d1164ce483f33fb4bf37f05
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TopRightNub
+      name: Casing_18
       rect:
         serializedVersion: 2
-        x: 160
+        x: 128
         y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16a47f3d5b61c40f6b3e47dbd0a4a8a3
+      spriteID: 2aab472ecf8444e809b613bbae5e3ac3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left
+      name: Casing_19
       rect:
         serializedVersion: 2
         x: 0
@@ -213,19 +521,39 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f12ba3e27896c474c8abe44cb0562c1f
+      spriteID: 459f3876bd1194f2c8fdeacd1941c057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right
+      name: Casing_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d031e2ebba3bd4662871ae5b061972ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_21
       rect:
         serializedVersion: 2
         x: 64
@@ -233,19 +561,79 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39e1d5f5bce85435aa491ce4336983b5
+      spriteID: a9d5289c489e7488c967344afee84b43
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottomLeft
+      name: Casing_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250d44189d0934b86a501979e77472a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d168387d3984b411d911d82fb1622595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066edc28dbed94364b67356040820c52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casing_25
       rect:
         serializedVersion: 2
         x: 0
@@ -253,19 +641,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fff48f452eb7d47ffabe0725b94cc4bb
+      spriteID: 0b742cf4c279f4a06a75ca8a9e63fae8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bottom
+      name: Casing_26
       rect:
         serializedVersion: 2
         x: 32
@@ -273,19 +661,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31f6d6049b50e4f37bcd263eb2248caa
+      spriteID: 64a1fc6ae9cde4a11b7c50212893ab99
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottomRight
+      name: Casing_27
       rect:
         serializedVersion: 2
         x: 64
@@ -293,39 +681,39 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c36c55627b9a64d8781a7300c2d76873
+      spriteID: 71b9d1a9c4508432daba40cc27626c03
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottomLeftNub
+      name: Casing_28
       rect:
         serializedVersion: 2
-        x: 96
+        x: 128
         y: 0
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe7412ad54fee48e69a425da39e1f1b8
+      spriteID: 155a37ebaad26493198863b4958268e5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottomRightNub
+      name: Casing_29
       rect:
         serializedVersion: 2
         x: 160
@@ -333,13 +721,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b0c1e41c157c49138deea36a38f9705
+      spriteID: 11fe560dcda8545dd8c88f58fe7d2d90
       vertices: []
       indices: 
       edges: []

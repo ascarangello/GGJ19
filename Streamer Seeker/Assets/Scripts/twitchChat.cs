@@ -11,15 +11,18 @@ public class twitchChat : MonoBehaviour
     private TcpClient twitchClient;
     private StreamReader reader;
     private StreamWriter writer;
-
+    
     public string username, password, channelName;
-    public Text chatBox;
+    //public Text chatBox;
     public static ArrayList inGamePlayers;
-    public GameObject viewerParent;
-    public GameObject viewerPrefab;
+    public static bool connnected = false;
+    //public GameObject viewerParent;
     // Start is called before the first frame update
     void Start()
     {
+        username = dataSaver.Instance.username;
+        channelName = dataSaver.Instance.channelName;
+        password = dataSaver.Instance.password;
         Connect();
         inGamePlayers = new ArrayList();
     }
@@ -29,6 +32,7 @@ public class twitchChat : MonoBehaviour
     {
         if(!twitchClient.Connected)
         {
+            connnected = false;
             Connect();
         }
         readChat();
@@ -45,7 +49,7 @@ public class twitchChat : MonoBehaviour
         writer.WriteLine("User " + username + " 8 * :" + username);
         writer.WriteLine("Join #" + channelName);
         writer.Flush();
-
+        connnected = true;
     }
 
     private void readChat()
@@ -67,10 +71,20 @@ public class twitchChat : MonoBehaviour
                 if (message.ToLower() == "!join" && !inGamePlayers.Contains(chatName))
                 {
                     inGamePlayers.Add(chatName);
-                    GameObject newViewer = Instantiate(viewerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-                    newViewer.name = chatName;
-                    newViewer.transform.parent = viewerParent.transform; 
-                    chatBox.text = chatBox.text + "\n" + string.Format("{0}", chatName);
+                    bool foundMatch = false;
+                    foreach(GameObject created in GameObject.FindGameObjectsWithTag("Viewer"))
+                    {
+                        if(!foundMatch)
+                        {
+                            if (created.name.Contains(" "))
+                            {
+                                created.name = chatName;
+                                created.GetComponent<viewerInfo>().viewerName = chatName;
+                                foundMatch = true;
+                            }
+                        }
+                    }
+                   // chatBox.text = chatBox.text + "\n" + string.Format("{0}", chatName);
                 }
                 //parse for choosing door/window if player is already in
                 Match matchWindow = Regex.Match(message, "^!w[1-7]$");
