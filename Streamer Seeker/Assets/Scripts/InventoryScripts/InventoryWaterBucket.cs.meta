@@ -3,7 +3,12 @@ guid: 5dcbf9a4bc2619342b5fa3224c8fdae9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - sprite: {instanceID: 0}
+  - player: {fileID: 8871077714306659886, guid: aa8a69aab13530d46b815707bf355237,
+      type: 3}
+  - waterBucket: {fileID: 6124050545476481014, guid: e481fa5b6c7263b40ae38f17509752ab,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

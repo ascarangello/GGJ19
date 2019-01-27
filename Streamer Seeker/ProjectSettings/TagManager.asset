@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - Viewer
+  - window
+  - door
+  - trap
+  - Streamer
   layers:
   - Default
   - TransparentFX

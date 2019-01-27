@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7170278a94101b14c821ae3b09721844, type: 3}
-  m_Name: AxeBomb
+  m_Script: {fileID: 11500000, guid: 0522eb2681c004447880a5ca18e0aa1f, type: 3}
+  m_Name: Inventory Axe
   m_EditorClassIdentifier: 
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: 082baf000bbf3a24eba6a7ff20181d36, type: 3}
+  numLeftDefault: 1
   numLeft: 1
-  player: {fileID: 0}
+  axe: {fileID: 1592889542369680056, guid: b45026b9d9061db418280ff2a948ad19, type: 3}

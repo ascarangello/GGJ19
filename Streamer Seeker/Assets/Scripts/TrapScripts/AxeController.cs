@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class AxeController : MonoBehaviour
 {
-    public GameObject axe;
     private List<GameObject> targets;
+    private float sprayTime = 1;
+    private bool spraying = false;
 
     public void Start()
     {
@@ -13,14 +14,29 @@ public class AxeController : MonoBehaviour
         Physics.queriesHitTriggers = true;
     }
 
-    public void MakeActive()
+    public void Update()
     {
-        this.axe.SetActive(true);
+        if (spraying)
+        {
+            foreach (GameObject go in this.targets)
+            {
+                go.GetComponent<viewerInfo>().dealDamage(10);
+            }
+            sprayTime -= Time.deltaTime;
+        }
+        if (sprayTime <= 0)
+        {
+            spraying = false;
+            sprayTime = 1;
+        }
     }
 
     public void OnMouseDown()
     {
-        Blast();
+        CircleCollider2D cc = this.gameObject.AddComponent<CircleCollider2D>();
+        cc.offset = new Vector2(0, 0);
+        cc.radius = 10;
+        this.spraying = true;
     }
 
     public void OnTriggerStay2D(Collider2D collision)
@@ -39,10 +55,12 @@ public class AxeController : MonoBehaviour
         }
     }
 
-    public void Blast()
+    public void SprayFinish()
     {
         //get the viewer data for each game object in targets and do what needs to be done.
+
         this.targets.Clear();
         Destroy(this);
+
     }
 }

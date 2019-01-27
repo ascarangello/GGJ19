@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WaterBucketController : MonoBehaviour
 {
-    public GameObject wb;
     private List<GameObject> targets;
     private int delay;
 
@@ -12,11 +11,6 @@ public class WaterBucketController : MonoBehaviour
     {
         this.targets = new List<GameObject>();
         this.delay = 0;
-    }
-
-    public void MakeActive()
-    {
-        this.wb.SetActive(true);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -52,7 +46,11 @@ public class WaterBucketController : MonoBehaviour
 
     public void Pour()
     {
-        //get the viewer data for each game object in targets and call the deal damage method.
+        Debug.Log("Pouring");
+        foreach (GameObject go in this.targets)
+        {
+            go.GetComponent<viewerInfo>().dealDamage(10);
+        }
         this.targets.Clear();
     }
 }

@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7170278a94101b14c821ae3b09721844, type: 3}
-  m_Name: CokeMentos
+  m_Script: {fileID: 11500000, guid: a80c48c391822494c81f7a55c618ccef, type: 3}
+  m_Name: Inventory Coke Mentos
   m_EditorClassIdentifier: 
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: be94442b2be38ad4d86b83e610ddc0ad, type: 3}
+  numLeftDefault: 3
   numLeft: 3
-  player: {fileID: 0}
+  cokeMentos: {fileID: 1771864454013725235, guid: 0e12605a3a59f4f46a419182b0f96f80,
+    type: 3}

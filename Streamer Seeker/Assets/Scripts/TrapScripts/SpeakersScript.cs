@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpeakersScript : MonoBehaviour
 {
-    public GameObject speaker;
     private List<GameObject> targets;
 
     public void Start()
@@ -13,13 +12,11 @@ public class SpeakersScript : MonoBehaviour
         Physics.queriesHitTriggers = true;
     }
 
-    public void MakeActive()
-    {
-        this.speaker.SetActive(true);
-    }
-
     public void OnMouseDown()
     {
+        BoxCollider2D bc = this.gameObject.GetComponent<BoxCollider2D>();
+        bc.offset = new Vector2(0, -6);
+        bc.size = new Vector2(18, 19);
         Blast();
     }
 
@@ -41,7 +38,10 @@ public class SpeakersScript : MonoBehaviour
 
     public void Blast()
     {
-        //get the viewer data for each game object in targets and do what needs to be done.
+        foreach (GameObject go in this.targets)
+        {
+            go.GetComponent<viewerInfo>().dealDamage(10);
+        }
         this.targets.Clear();
         Destroy(this);
     }

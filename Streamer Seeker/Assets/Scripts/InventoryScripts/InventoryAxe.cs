@@ -2,24 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu]
 public class InventoryAxe : InventoryItem
 {
     public GameObject axe;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        this.numLeft = 1;
-    }
 
     public override void PlaceItem()
     {
-        if (this.numLeft > 0 && !this.player.GetComponent<PlayerController>().OnDoorWindow()
-            && !this.player.GetComponent<PlayerController>().IsOnTrap())
+        GameObject player = GameObject.FindGameObjectWithTag("Streamer");
+        if (this.numLeft > 0 && !player.GetComponent<PlayerController>().OnDoorWindow()
+            && !player.GetComponent<PlayerController>().IsOnTrap())
         {
             GameObject clone;
-            clone = Instantiate(this.axe, this.player.transform.position, this.player.transform.rotation);
-            clone.SetActive(false);
+            clone = Instantiate(this.axe, player.transform.position, player.transform.rotation);
             this.numLeft--;
         }
     }

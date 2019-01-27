@@ -6,8 +6,14 @@ using UnityEngine;
 public class InventoryItem : ScriptableObject
 {
     public Sprite sprite;
+    public int numLeftDefault;
+    //public GameObject player;
     public int numLeft;
-    public GameObject player;
+
+    public void Start()
+    {
+        this.numLeft = this.numLeftDefault;
+    }
 
     public virtual void PlaceItem()
     {

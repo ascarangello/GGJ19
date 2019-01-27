@@ -22,4 +22,16 @@ public class viewerInfo : MonoBehaviour
     {
         
     }
+
+    public void dealDamage(int damage)
+    {
+        int newHealth = this.health - damage;
+        if (newHealth < 0)
+        {
+            this.health = 0;
+        } else
+        {
+            this.health = newHealth;
+        }
+    }
 }
