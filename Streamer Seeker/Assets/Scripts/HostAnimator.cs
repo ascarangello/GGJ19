@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class HostAnimator : MonoBehaviour
 {
-    float dirx, diry;
-    Animator anim;
+    private  float dirx, diry;
+
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,29 +20,11 @@ public class HostAnimator : MonoBehaviour
         dirx = Input.GetAxis("Horizontal");
         diry = Input.GetAxis("Vertical");
 
-        if (dirx >= 0.1 && diry == 0){
-            anim.speed = 1;
-            anim.SetInteger("Direction", 3);
-        }
-        else if (dirx == 0 && diry >= 0.1)
-        {
-            anim.speed = 1;
-            anim.SetInteger("Direction", 1);
-        }
-        else if (dirx <= -0.1 && diry == 0)
-        {
-            anim.speed = 1;
-            anim.SetInteger("Direction", 2);
-        }
-        else if (dirx == 0 && diry <= -0.1)
-        {
-            anim.speed = 1;
-            anim.SetInteger("Direction", 4);
-        }
-        else if (dirx == 0 && diry == 0)
-        {
-            anim.SetInteger("Direction", 0);
-            anim.speed = 0f;
+        anim.SetFloat("XPos", dirx);
+        anim.SetFloat("YPos", diry);
+
+        if (Input.GetKeyDown(KeyCode.Space)){
+            anim.SetTrigger("Hit");
         }
     }
 }
