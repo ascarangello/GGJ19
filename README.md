@@ -1,5 +1,5 @@
 # GGJ19
-<h1>Streamer Seeker</h1>
+<h1>Livestream Defense Scheme</h1>
 A top down game where the Streamer must defend his house from an onslaught of ravenous fans trying to break in and steal his early review
 copies of Half Life 3
 
