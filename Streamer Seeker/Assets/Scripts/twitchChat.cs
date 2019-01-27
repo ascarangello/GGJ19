@@ -11,10 +11,11 @@ public class twitchChat : MonoBehaviour
     private TcpClient twitchClient;
     private StreamReader reader;
     private StreamWriter writer;
-
+    
     public string username, password, channelName;
     //public Text chatBox;
     public static ArrayList inGamePlayers;
+    public static bool connnected = false;
     //public GameObject viewerParent;
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class twitchChat : MonoBehaviour
     {
         if(!twitchClient.Connected)
         {
+            connnected = false;
             Connect();
         }
         readChat();
@@ -47,7 +49,7 @@ public class twitchChat : MonoBehaviour
         writer.WriteLine("User " + username + " 8 * :" + username);
         writer.WriteLine("Join #" + channelName);
         writer.Flush();
-
+        connnected = true;
     }
 
     private void readChat()
