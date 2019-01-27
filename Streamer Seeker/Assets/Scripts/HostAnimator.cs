@@ -10,7 +10,6 @@ public class HostAnimator : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        print("test");
         anim.speed = 1;
     }
 
