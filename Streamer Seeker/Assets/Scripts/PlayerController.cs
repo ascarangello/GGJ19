@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     Rigidbody2D body;
+    Animator anmi;
+
     float horizontal;
     float vertical;
     float moveLimiter = 0.7f;
+
     public float runSpeed = 10;
     public float bulletSpeed = 20;
     public GameObject bulletPrefab;
     public Transform spawnOffset;
+
     private float shootCooldown = 1;
     private bool canShoot;
     private bool inDoorWindow = false;
@@ -20,6 +25,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        anmi = GetComponent<Animator>();
         canShoot = true;
 
     }
@@ -34,7 +40,7 @@ public class PlayerController : MonoBehaviour
         }
         if(shootCooldown <= 0)
         {
-            canShoot = true;
+            canShoot = false;
             shootCooldown = 1;
         }
     }
@@ -51,9 +57,9 @@ public class PlayerController : MonoBehaviour
             body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed); // move at normal speed
         }
         transform.position = body.transform.position;
-        if(Input.GetKeyDown(KeyCode.Space) && canShoot)
+        if (Input.GetKeyDown(KeyCode.Space) && canShoot)
         {
-            foreach(GameObject oldBullet in GameObject.FindGameObjectsWithTag("Projectile"))
+            foreach (GameObject oldBullet in GameObject.FindGameObjectsWithTag("Projectile"))
             {
                 GameObject.Destroy(oldBullet);
             }
