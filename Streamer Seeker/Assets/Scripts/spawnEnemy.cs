@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Pathfinding;
 
 public class spawnEnemy : MonoBehaviour
 {
@@ -14,6 +14,7 @@ public class spawnEnemy : MonoBehaviour
     public GameObject timer;
     public roundTimer timerInfo;
     private bool setPaths = false;
+    public bool inside = false;
     private string[] listOfNames =
     {
         "Lance Lynnnnnnn",
@@ -75,6 +76,20 @@ public class spawnEnemy : MonoBehaviour
             this.GetComponent<AI_FIndingPath>().target = targetTransform;
             
             setPaths = true;
+        }
+        if(timerInfo.roundStarted && setPaths && !this.GetComponent<AI_FIndingPath>().enabled && !inside)
+        {
+            string entrancePath = this.GetComponent<viewerInfo>().chosenWindow + " entrance";
+            GameObject correctEntrance = GameObject.Find(entrancePath);
+            this.transform.position = correctEntrance.transform.position;
+           
+            Debug.Log(correctEntrance.name);
+            Transform destinationTransform = GameObject.Find("entranceHolder").transform;
+            this.GetComponent<AILerp>().enabled = true;
+            this.GetComponent<AI_FIndingPath>().enabled = true;
+            this.GetComponent<AI_FIndingPath>().target = destinationTransform.transform;
+            this.GetComponent<AI_FIndingPath>().seeker.StartPath(this.transform.position, destinationTransform.position, this.GetComponent<AI_FIndingPath>().OnPathComplete);
+            inside = true;
         }
 
 

@@ -9,7 +9,7 @@ public class AI_FIndingPath : MonoBehaviour
     private Vector3 targetPosition;
     public Transform target;
 
-    private Seeker seeker;
+    public Seeker seeker;
     private CharacterController controller;
 
     //The calculated path
@@ -70,7 +70,10 @@ public class AI_FIndingPath : MonoBehaviour
         if (currentWaypoint >= path.vectorPath.Count)
         {
             Debug.Log("End Of Path Reached");
+            GetComponent<AI_FIndingPath>().enabled = false;
+            GetComponent<AILerp>().enabled = false;
             return;
+         
         }
 
         //Direction to the next waypoint
