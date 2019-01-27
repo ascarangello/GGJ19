@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class spawnEnemy : MonoBehaviour
 {
+
+    public GameObject viewer;
+    public float spawnTime = 3f;
+
     // Start is called before the first frame update
     void Start()
     {
