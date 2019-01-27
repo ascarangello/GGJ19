@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChatTest.unity
     guid: e770dd0b57b422746897ed4c6b042b85
+  - enabled: 1
+    path: Assets/Scenes/JamieIsFuckingAround.unity
+    guid: 82df49a0b561f5748854c0cd98edb4ec
   m_configObjects: {}

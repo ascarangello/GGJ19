@@ -15,8 +15,7 @@ public class twitchChat : MonoBehaviour
     public string username, password, channelName;
     //public Text chatBox;
     public static ArrayList inGamePlayers;
-    public GameObject viewerParent;
-    public GameObject viewerPrefab;
+    //public GameObject viewerParent;
     // Start is called before the first frame update
     void Start()
     {
