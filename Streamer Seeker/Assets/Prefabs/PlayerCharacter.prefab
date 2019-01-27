@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 1046706595}
   - component: {fileID: 1046706594}
   - component: {fileID: 1046706593}
+  - component: {fileID: 3677678732301211724}
   - component: {fileID: 1046706599}
   m_Layer: 0
   m_Name: PlayerCharacter
@@ -209,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023b96a9783886d43b5ce7c7b9cc3e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 10
+  runSpeed: 5
   bulletSpeed: 20
   bulletPrefab: {fileID: 6845565049385283934, guid: b15293e694a5fe649892648176365ef0,
     type: 3}
@@ -233,6 +234,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3677678732301211724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046706592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60c55bcfdf3f0a54b9b881bb9680b821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiSkin: {fileID: 11400000, guid: 7b1c808a4f2fd744b984e5e707b55270, type: 2}
+  text: 
+  color: {r: 0, g: 0, b: 0, a: 1}
+  fontSize: 10
+  offsetX: 0
+  offsetY: 0.5
+  messagePermanent: 1
 --- !u!114 &1046706599
 MonoBehaviour:
   m_ObjectHideFlags: 0
