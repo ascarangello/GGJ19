@@ -24,7 +24,7 @@ public class HostAnimator : MonoBehaviour
         anim.SetFloat("YPos", diry);
 
         if (Input.GetKeyDown(KeyCode.Space)){
-            anim.SetTrigger("Hit");
+            anim.SetTrigger("Attacking");
         }
     }
 }
