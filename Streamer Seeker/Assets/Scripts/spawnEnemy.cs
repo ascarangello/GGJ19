@@ -14,6 +14,7 @@ public class spawnEnemy : MonoBehaviour
     public GameObject timer;
     public roundTimer timerInfo;
     private bool setPaths = false;
+    public GameObject nameText;
     public bool inside = false;
     private string[] listOfNames =
     {
@@ -53,10 +54,11 @@ public class spawnEnemy : MonoBehaviour
         if (timerInfo.roundStarted && !setPaths)
         {
             string chosenEntry = GetComponent<viewerInfo>().chosenWindow;
-            if (chosenEntry == "NA")
+            if (chosenEntry == "NA" || gameObject.name.Contains(" "))
             {
                 int nameNum = Random.Range(1, listOfNames.Length);
                 this.GetComponent<viewerInfo>().viewerName = listOfNames[nameNum];
+                nameText.GetComponent<TextMesh>().text = listOfNames[nameNum];
                 this.name = listOfNames[nameNum];
                 int randLetter = Random.Range(1, 3);
                 if (randLetter == 1)
@@ -72,6 +74,7 @@ public class spawnEnemy : MonoBehaviour
                 GetComponent<viewerInfo>().chosenWindow = chosenEntry;
             }
             Debug.Log(chosenEntry);
+            nameText.GetComponent<TextMesh>().text = GetComponent<viewerInfo>().viewerName;
             Transform targetTransform = GameObject.Find(chosenEntry).transform;
             this.GetComponent<AI_FIndingPath>().enabled = true;
             this.GetComponent<AI_FIndingPath>().target = targetTransform;
