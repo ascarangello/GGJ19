@@ -57,6 +57,7 @@ public class spawnEnemy : MonoBehaviour
             {
                 int nameNum = Random.Range(1, listOfNames.Length);
                 this.GetComponent<viewerInfo>().viewerName = listOfNames[nameNum];
+                this.name = listOfNames[nameNum];
                 int randLetter = Random.Range(1, 3);
                 if (randLetter == 1)
                 {

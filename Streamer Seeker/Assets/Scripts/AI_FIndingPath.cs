@@ -72,6 +72,10 @@ public class AI_FIndingPath : MonoBehaviour
             Debug.Log("End Of Path Reached");
             GetComponent<AI_FIndingPath>().enabled = false;
             GetComponent<AILerp>().enabled = false;
+            if(GetComponent<spawnEnemy>().inside)
+            {
+                GetComponent<viewerInfo>().hasWon = true;
+            }
             return;
          
         }
