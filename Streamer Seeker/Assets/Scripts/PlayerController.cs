@@ -50,23 +50,6 @@ public class PlayerController : MonoBehaviour
         { 
             body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed); // move at normal speed
         }
-        //Set rotations
-        if (vertical > 0)
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-        else if (vertical < 0) 
-        {
-            transform.eulerAngles = new Vector3(0, 0, 180);
-        }
-        else if(horizontal > 0)
-        {
-            transform.eulerAngles = new Vector3(0, 0, -90);
-        }
-        else if(horizontal < 0)
-        {
-            transform.eulerAngles = new Vector3(0, 0, 90);
-        }
         transform.position = body.transform.position;
         if(Input.GetKeyDown(KeyCode.Space) && canShoot)
         {
@@ -75,8 +58,8 @@ public class PlayerController : MonoBehaviour
                 GameObject.Destroy(oldBullet);
             }
             GameObject proj = Object.Instantiate(bulletPrefab, spawnOffset.transform.position, spawnOffset.transform.rotation);
-            proj.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Cos(Mathf.Deg2Rad * (transform.eulerAngles.z + 90)),
-                                                                    Mathf.Sin(Mathf.Deg2Rad * (transform.eulerAngles.z + 90))) * bulletSpeed;
+            proj.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Cos(Mathf.Deg2Rad * (spawnOffset.transform.eulerAngles.z + 90)),
+                                                                    Mathf.Sin(Mathf.Deg2Rad * (spawnOffset.transform.eulerAngles.z + 90))) * bulletSpeed;
             canShoot = false;
 
         }
